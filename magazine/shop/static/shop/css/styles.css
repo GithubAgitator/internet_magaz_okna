@@ -1,0 +1,140 @@
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    font-size: 1.0rem;
+    margin-bottom: 60px;
+    position: relative;
+
+
+    }
+
+
+.row {
+    padding: 100px;
+    text-align: center;
+    }
+.form-inline  {
+    padding: 20px;
+    }
+
+.general-container{
+    background: url( '/static/shop/img/img.png');
+    height: 110%;
+    font-weight: 100;
+    line-height: 50px;
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.form-group{
+    color: #FFFFFF;
+    }
+.title{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    height: 650px;
+    border: 1px solid lightgrey;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    margin-bottom:150px;
+    }
+.pull-center {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+}
+
+
+
+
+
+
+.discount-container, span {
+
+    background: #55e073;
+
+
+
+
+    }
+
+
+h2 {
+    margin-top: 111;
+    margin-bottom: 4.5rem;
+    font-weight: 500;
+    line-height: 5.2;
+    font-size: calc(1.325rem + .9vw);
+    padding-block: 11px;
+}
+.btn{
+    position: absolute;
+    bottom:15px;
+    left: 20%;
+
+    }
+
+.section{
+
+    background-color: green;
+
+
+
+    }
+
+
+
+
+
+
+.wrapper {
+    background-color:lightgrey;
+
+    min-height:100%;
+
+
+    }
+.navbar-top {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: green;
+    }
+
+.wrapper-content{
+    padding-bottom: 180px;
+    overflow: auto;
+    }
+.footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 32px;
+    height:60px;
+    background-color: white;
+    clear: both;
+    }
+
+a {
+     text-decoration-none;
+     }
+.form-error {
+    color: red;
+    }
+
+element.style
+.button {
+    float: right;
+}
+

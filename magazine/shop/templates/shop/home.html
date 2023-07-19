@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+  <div class="container">
+<div class="section-top img-fluid  position-relative">
+    <img src="{% static 'shop/img/w.jpg' %}"  width="100%">
+    <h3  class="img1 position-absolute text-center" style="top:200px; padding:50px;">Пластиковые окна в Нижнем Новгороде</h3>
+</div>
+
+
+
+
+  <div class="text-dark col-lg-12 text-center display-1 m-5"><h2>Новые поступления</h2>
+</div>
+
+
+      <div class="row row-cols-1 row-cols-md-4 g-4 p-0">
+          {% for product_image in products_images %}
+          {% include 'shop/product_item.html' %}
+
+        {% endfor %}
+      </div>
+
+
+<!--<div class="section section-delivery text-center h-50% bg-green text-white ">-->
+<!--<h3>Free shipping</h3>-->
+<!--</div>-->
+
+<!--***************-->
+  <div class="text-dark col-lg-12 text-center display-1 m-5"><h2>Окна</h2>
+</div>
+
+
+      <div class="row row-cols-1 row-cols-md-4 g-4 p-0">
+          {% for product_image in products_images_windows %}
+          {% include 'shop/product_item.html' %}
+
+        {% endfor %}
+      </div>
+
+
+
+<!--      ****************-->
+    <div class="text-dark col-lg-12 text-center display-1 m-5"><h2>Двери</h2>
+</div>
+
+
+      <div class="row row-cols-1 row-cols-md-4 g-4 p-0">
+          {% for product_image in products_images_door %}
+          {% include 'shop/product_item.html' %}
+
+        {% endfor %}
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+</div>

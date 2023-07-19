@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+<h1 class="text-center" style="padding: 30px; margin: 58px;">{{title}}</h1>
+
+<div class="section-top img-fluid">
+    <img src="{% static 'shop/img/zamer-01.jpg' %}" >
+</div>
+<form method="post">
+    {% csrf_token %}
+    <div class="col-md-6">
+          <div class="md-form  mb-0 text-left" style="margin: 5px;">
+    {{ form.as_p }}
+    <button type="submit">Записаться</button>
+          </div>
+    </div>
+</form>
+</div>
+
+{% endblock %}

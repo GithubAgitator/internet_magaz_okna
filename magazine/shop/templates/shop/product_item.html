@@ -1,0 +1,24 @@
+<div class="col-lg-3">
+    <div class="card">
+        <a href="{% url 'product' product_image.product.id %}">
+      <img src="{{ product_image.image.url}}" class="card-img-top" alt="...">
+        </a>
+      <div class="card-body">
+          {% if product_image.product.discount %}
+          <div class="discount-container top-5% width-10% font-weight-700 p-1 text-white">
+              <span>{{ product_image.product.discount }}%</span>
+          </div>
+          {% endif %}
+        <h5 class="card-title text-center">{{ product_image.product.name }}</h5>
+        <p class="card-text lh-base">{{ product_image.product.description|truncatechars_html:70 }}</p>
+
+          <p class="card-price lh-base fw-bolder">{{ product_image.product.price}} p<div class="pull-center"></div>
+
+
+          <button type="submit" class="btn btn-success" data-product_id = "{{ product.id }}"
+             data-name = "{{ product.name }}"
+             data-price = "{{ product.price }}" style="widht:175px;">Добавить в корзину</button>
+
+      </div>
+    </div>
+  </div>
